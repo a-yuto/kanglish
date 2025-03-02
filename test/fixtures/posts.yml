@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: 最初の投稿
+  content: これは最初の投稿の内容です。
+
+two:
+  title: 2番目の投稿
+  content: これは2番目の投稿の内容です。
