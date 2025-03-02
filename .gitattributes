@@ -1,5 +1,8 @@
 # See https://git-scm.com/docs/gitattributes for more about git attribute files.
 
+# Set default behavior to automatically normalize line endings.
+* text=auto eol=lf
+
 # Mark the database schema as having been generated.
 db/schema.rb linguist-generated
 
@@ -7,3 +10,16 @@ db/schema.rb linguist-generated
 vendor/* linguist-vendored
 config/credentials/*.yml.enc diff=rails_credentials
 config/credentials.yml.enc diff=rails_credentials
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.rb text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.erb text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf

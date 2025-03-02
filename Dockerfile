@@ -46,6 +46,9 @@ RUN bundle install && \
 # Copy application code
 COPY . .
 
+# Fix line endings in shell scripts
+RUN find /rails/bin -type f -exec sed -i 's/\r$//' {} \;
+
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
 
