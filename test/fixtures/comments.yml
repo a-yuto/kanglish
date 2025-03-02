@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: 最初のコメント
+  post: one
+
+two:
+  content: 2番目のコメント
+  post: one
+
+three:
+  content: 3番目のコメント
+  post: two
